@@ -1,6 +1,6 @@
 pyrogram==2.0.37
 tgcrypto
-yt-dlp==2025.10.01
+yt-dlp
 aiohttp
 aiofiles
 python-dotenv
