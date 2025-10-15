@@ -1,5 +1,8 @@
 # config.py - put your secrets here (DO NOT COMMIT to public repo)
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 API_ID = int(os.getenv("API_ID", "-25451030"))         # Telegram API ID
 API_HASH = os.getenv("API_HASH", "9810f1e7387fc060f76b706844364819")   # Telegram API hash
