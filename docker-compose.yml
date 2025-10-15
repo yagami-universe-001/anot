@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  bot:
+    build: .
+    environment:
+      - API_ID=${API_ID}
+      - API_HASH=${API_HASH}
+      - BOT_TOKEN=${BOT_TOKEN}
+      - SPOTIFY_CLIENT_ID=${SPOTIFY_CLIENT_ID}
+      - SPOTIFY_CLIENT_SECRET=${SPOTIFY_CLIENT_SECRET}
+      - ADMINS=${ADMINS}
+      - ENABLE_YT_DOWNLOAD=${ENABLE_YT_DOWNLOAD}
+    volumes:
+      - ./downloads:/app/downloads
+      - ./static:/app/static
+    restart: unless-stopped

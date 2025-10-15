@@ -1,0 +1,9 @@
+pyrogram==2.0.37
+tgcrypto
+yt-dlp==2025.10.01
+aiohttp
+aiofiles
+python-dotenv
+spotipy==2.22.0
+pydub
+sqlite-utils
